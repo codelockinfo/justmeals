@@ -570,9 +570,13 @@ $(document).ready(function() {
 			$remain_amount = '';
 			$(".addToCart").prop('disabled', false);
 			$(".addToCart").css("cursor", "pointer");
+			$(".addToCart").find("span").text("Continue");
+			$(".stickyAddtocart").find("span").text("Continue");
 		} else {
 			$(".addToCart").attr("disabled", "disabled");
 			$(".addToCart").css("cursor", "not-allowed");
+			$(".addToCart").find("span").text("Spend $90 to Continue");
+			$(".stickyAddtocart").find("span").text("Spend $90 to Continue");
 			$remain_amount = "$" + $remain_amount + " Left to ";
 		}
       
@@ -593,9 +597,9 @@ $(document).ready(function() {
 		if ($getremainAmount < 1) {
           var $finalremainamount = "";  
         }
-
-          $(".addToCart").find("span").text($finalremainamount + " Checkout ($" + $getproductPrices + ")");
-          $(".stickyAddtocart").find("span").text($finalremainamount + " Checkout ($" + $getproductPrices + ")");
+		$(".custom-carttotal-int").text("$" +$getproductPrices);
+        //   $(".addToCart").find("span").text($finalremainamount + " Checkout ($" + $getproductPrices + ")");
+        //   $(".stickyAddtocart").find("span").text($finalremainamount + " Checkout ($" + $getproductPrices + ")");
 
 		// $(".addToCart").find("span").text($remain_amount + " Checkout ($" + $productPrices + ")");
 		// $(".stickyAddtocart").find("span").text($remain_amount + " Checkout ($" + $productPrices + ")");

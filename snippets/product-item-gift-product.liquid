@@ -35,9 +35,7 @@
     endif
 
   -%}
-  <div class="cartgiftproduct">
-    <img src="{{ product.featured_media | img_url: 'medium' }}" alt="{{ product.featured_media.title }}" />
-</div>
+
   <div class="card__text product-item__text gutter--regular spacing--xlarge remove-empty-space text-align--{{ settings.product_card_text_alignment }}">
 
     
@@ -60,6 +58,7 @@
               </span>
             </div>
           </a>
+          <div><span class="btnlocked">Locked</span></div>
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
           {% comment %} <label for="Variants-{{ section.id }}" class="text-size--large" style="display:block;margin-bottom:.75rem">{{ 'products.page.variants' | t }}</label> {% endcomment %}
           <select name="id" data-vid="{{ current_variant.id }}"  id="Variants-{{ section.id }}" class="product-variant-select productSelect"
@@ -130,7 +129,9 @@
     {%- endfor -%}
 
   </div>
-
+  <div class="cartgiftproduct">
+    <img src="{{ product.featured_media | img_url: 'medium' }}" alt="{{ product.featured_media.title }}" />
+</div>
   {%- liquid
     unless blank_product
       render 'product-badges', product: product, text_class: 'text-size--xsmall'

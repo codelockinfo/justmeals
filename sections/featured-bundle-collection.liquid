@@ -115,15 +115,7 @@
                 </div>
                 <div class="product-container">
                   <div class="box-summary" id="cartSummary"> </div>
-                  <div class="box-giftproduct">
-                  {% if section.settings.product_list != blank %}
-                    {% assign  productgift = section.settings.product_list  %}
-                    <div class="maingiftproductitem">
-                    {%  render 'product-item-gift-product', product: productgift, section_blocks: section.blocks, index: forloop.index, layout: 'shop' %}
-                    </div>
-                    {% endif %}
-                      
-                  </div> 
+                
                 </div>
                 <div class="box-footer">
                   {%- assign product_form_id = 'product-form-' | append: section.id -%}
@@ -131,7 +123,12 @@
                     {%- form 'product', product, id: product_form_id, class: 'form bundle_product', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                       <input type="hidden" name="id" value="{{ current_variant.id }}" class="product_variant_id">
                       <div class="product__cart-functions">
-                
+                        <div class="customcart-total">
+                          <div class="custom-carttotal">
+                            <span class="custom-carttotallabel">Total:</span>
+                            <span class="custom-carttotal-int">$130</span>
+                          </div>
+                        </div>
                         <div class="flex-buttons">
                           {%- liquid 
                             if block.settings.show_quantity_selector
@@ -141,7 +138,7 @@
                           <button type="submit" name="add" class="addToCart add-to-cart button button--solid button--product button--loader" data-js-product-add-to-cart>
                             <span class="button__text" data-js-product-add-to-cart-text {% if block.settings.show_preorder %} data-show-preorder-wording {% endif %}>
                               {%- liquid
-                                    echo '90$ Left to checkout'
+                                    echo 'Spend $90 to Continue'
                               -%}
                             </span>
                             <span class="button__preloader">
@@ -159,6 +156,15 @@
                         
                       </div>
                     {%- endform -%}
+                    <div class="box-giftproduct">
+                      {% if section.settings.product_list != blank %}
+                        {% assign  productgift = section.settings.product_list  %}
+                        <div class="maingiftproductitem">
+                        {%  render 'product-item-gift-product', product: productgift, section_blocks: section.blocks, index: forloop.index, layout: 'shop' %}
+                        </div>
+                        {% endif %}
+                          
+                      </div> 
                 </div>
          </div>
          <div class="cart-overlay">
@@ -184,7 +190,7 @@
               <button type="submit" name="add" class="stickyAddtocart add-to-cart button button--solid button--product button--loader" data-js-product-add-to-cart>
                 <span class="button__text" data-js-product-add-to-cart-text {% if block.settings.show_preorder %} data-show-preorder-wording {% endif %}>
                   {%- liquid
-                        echo 'Cart total should be at least $90'
+                        echo 'Spend $90 to Continue'
                   -%}
                 </span>
                 <span class="button__preloader">

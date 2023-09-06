@@ -46,6 +46,26 @@
 .box-summary .variant-title,.box-giftproduct .variant-title,.box-giftproduct .variant-label,.box-giftproduct .product-variant-value,.box-giftproduct .product-variant-select{
     font-size: 14px;
 }
+.box-giftproduct .maingiftproductitem .variant-title{
+    font-size: 20px;
+}
+.box-giftproduct  .product-item__text.text-align--center{
+        align-items: end;
+}
+.box-giftproduct  .product-variant-select{
+    display: none;
+}
+.box-giftproduct.show .btnlocked{
+    display: none;
+}
+.btnlocked{
+    padding: 8px 20px;
+    background: #E4E4E4;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #949494;
+}
 .box-summary .product-item{
     flex-direction: row;
     
@@ -70,6 +90,7 @@
     padding: 0 5px;
     justify-content: space-between;
     width: 100%;  
+    border: none;
 }
 .box-giftproduct{
     /* border-left: 1px solid rgb(211 211 211);
@@ -77,8 +98,12 @@
     /* display: none; */
     pointer-events: none;
     opacity: 0.7;
-}
+    padding-top: 5%;
 
+}
+.box-giftproduct.show .product-variant-select{
+    display: block;
+}
 .box-giftproduct.show{
     display: block;
     pointer-events: auto;
@@ -86,7 +111,8 @@
 }
 .maingiftproductitem{
     margin: 0 2%;
-    padding-top: 2%;
+    /* padding-top: 2%; */
+    border-top: 4px solid #131515;
 }
 .giftProduct .product-actions{
     display: none;
@@ -220,7 +246,7 @@
 }
 .box-footer{
     border-top: none;
-    padding: 1.25rem;
+    padding: .25rem;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -543,6 +569,7 @@
     background: #33F51C;
     border-color:#33F51C;
     border-radius: 0;
+    border: 1px solid #949494;
 }
 .bundle_product .add-to-cart .button__text{
     font-size: 18px;
@@ -551,8 +578,19 @@
 .custom-bundle .text-weight--bold {
     font-weight: 700;
 }
+.custom-bundle .flex-buttons{
+    margin-top: 0 !important;
+    width: calc(65% + 0.625rem);
+    margin-left: auto;
+}
 .box-summary .cartfontcontainer{
     width: 65%;
+}
+.custom-carttotal{
+    text-align: end;
+    padding-right: 2%;
+    font-size: 30px;
+    font-weight: 700;
 }
 .stickycart .add-to-cart, .stickycart .stickycartbtn{
     background: #33F51C;
