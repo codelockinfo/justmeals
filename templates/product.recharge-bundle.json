@@ -1,6 +1,6 @@
 {
   "sections": {
-    "d6f239c2-1744-4d9d-b156-3b5d57c93a6f": {
+    "2a69e9b1-5a5f-4419-923f-fa339c0d6a9a": {
       "type": "custom-subscriptionwidget",
       "settings": {
         "heading": "Get your meats now",
@@ -9,22 +9,42 @@
         "widgetheading": "Select frequency",
         "widgetlabel1": "Subscribe & Save",
         "widgetlabel2": "One Time",
-        "widgetext1": "Save 35% on your first order",
-        "widgetext2": "Save 10% on future orders",
-        "widgetext3": "Cancel Anytime",
-        "widgetext4": "Early Access to New Products",
-        "widgetext5": "",
-        "deliverylabel": "",
-        "deliveryin15days": "",
-        "deliveryin30days": "",
+        "widgetext1": "Save 25% on your first order",
+        "widgetext2": "$15 Off First Order",
+        "widgetext3": "$4 Off Future Orders",
+        "widgetext4": "5 Day Email Reminder - Cancel Anytime",
+        "widgetext5": "Free New Flavor with Every Box",
+        "deliverylabel": "Delivery",
+        "deliveryin15days": "Delivery every 15 Days",
+        "deliveryin30days": "Delivery every 30 Days",
         "seo_h_tag": "h2",
         "remove_margin": false
       }
     },
-    "16931505586e383317": {
+    "recharge-bundles-widget": {
       "type": "apps",
       "blocks": {
-        "e11d7379-80ec-4afe-8eb2-5a880e890c1b": {
+        "recharge-bundles-widget-block": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/bundles-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "disabled": true,
+          "settings": {
+            "product": "{{ product }}",
+            "rb_theme_color": "#00C09E",
+            "rb_theme_text": "#ffffff",
+            "rb_theme_other_text": "#283965",
+            "rb_theme_bg": "#ffffff",
+            "rb_text_size": "16px",
+            "rb_spacing_width": 1220,
+            "rb_spacing_margins": "15px",
+            "rb_buttons_size": "15px",
+            "rb_buttons_corners": "4",
+            "rb_builder_items_per_row_ns": 4,
+            "rb_builder_items_per_row": "1",
+            "rb_builder_aspect_ratio": "100%",
+            "rb_builder_radius": "4"
+          }
+        },
+        "33b151a3-5300-40ec-b1f1-c2f8c077ee62": {
           "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
           "settings": {
             "product": "{{product}}"
@@ -32,45 +52,46 @@
         }
       },
       "block_order": [
-        "e11d7379-80ec-4afe-8eb2-5a880e890c1b"
+        "recharge-bundles-widget-block",
+        "33b151a3-5300-40ec-b1f1-c2f8c077ee62"
       ],
       "settings": {
         "full_width": false,
         "remove_margin": false
       }
     },
-    "7d74e3c2-914c-46a3-889a-da1251a4f605": {
+    "d7bfde51-cb2d-416c-82c5-7639d0f25464": {
       "type": "featured-bundle-collection",
       "blocks": {
-        "template--20542029103385__7d74e3c2-914c-46a3-889a-da1251a4f605-title-1": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "template--20542029103385__7d74e3c2-914c-46a3-889a-da1251a4f605-price-1": {
+        "template--20958047142188__d7bfde51-cb2d-416c-82c5-7639d0f25464-price-1": {
           "type": "price",
           "settings": {
           }
         },
-        "template--20542029103385__7d74e3c2-914c-46a3-889a-da1251a4f605-quick_buy-1": {
+        "template--20958047142188__d7bfde51-cb2d-416c-82c5-7639d0f25464-title-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "template--20958047142188__d7bfde51-cb2d-416c-82c5-7639d0f25464-quick_buy-1": {
           "type": "quick_buy",
           "disabled": true,
           "settings": {
           }
         },
-        "fd149ccd-0e28-435d-9c21-174a47fd0a74": {
+        "8079d685-11fc-4540-b8cc-74f190784a18": {
           "type": "add_button",
           "settings": {
-            "button_title": "ADD",
+            "button_title": "Add",
             "show_quantity_selector": true
           }
         }
       },
       "block_order": [
-        "template--20542029103385__7d74e3c2-914c-46a3-889a-da1251a4f605-title-1",
-        "template--20542029103385__7d74e3c2-914c-46a3-889a-da1251a4f605-price-1",
-        "template--20542029103385__7d74e3c2-914c-46a3-889a-da1251a4f605-quick_buy-1",
-        "fd149ccd-0e28-435d-9c21-174a47fd0a74"
+        "template--20958047142188__d7bfde51-cb2d-416c-82c5-7639d0f25464-price-1",
+        "template--20958047142188__d7bfde51-cb2d-416c-82c5-7639d0f25464-title-1",
+        "template--20958047142188__d7bfde51-cb2d-416c-82c5-7639d0f25464-quick_buy-1",
+        "8079d685-11fc-4540-b8cc-74f190784a18"
       ],
       "custom_css": [
         ".productsimage .product-item {cursor: pointer;}",
@@ -79,40 +100,31 @@
       "settings": {
         "heading": "2",
         "subheading": "SELECT PRODUCT",
-        "subtext1": "",
-        "subtext2": "",
+        "subtext1": "Quickly fill your box with our preselected bundles",
+        "subtext2": "Or, personalize with your favorites",
         "show_view_all": false,
         "section_heading_layout": "section-heading--left",
         "style": "grid",
         "layout": "grid-3 grid-lap-2 grid-tiny-1",
-        "products_number": 16,
+        "products_number": 8,
         "collection": "all-products",
         "collection1": "beef",
-        "collection2": "brisket",
+        "collection2": "pork",
         "collection3": "chicken",
-        "collection4": "pork",
+        "collection4": "",
         "product_list": "gift-product",
         "section_background_color": "rgba(0,0,0,0)",
         "section_heading_color": "rgba(0,0,0,0)",
-        "remove_margin": true,
+        "remove_margin": false,
         "seo_h_tag": "h2",
         "minprice": "$90",
         "maxprice": "$130"
       }
-    },
-    "1693439542cff73aec": {
-      "type": "apps",
-      "disabled": true,
-      "settings": {
-        "full_width": false,
-        "remove_margin": false
-      }
     }
   },
   "order": [
-    "d6f239c2-1744-4d9d-b156-3b5d57c93a6f",
-    "16931505586e383317",
-    "7d74e3c2-914c-46a3-889a-da1251a4f605",
-    "1693439542cff73aec"
+    "2a69e9b1-5a5f-4419-923f-fa339c0d6a9a",
+    "recharge-bundles-widget",
+    "d7bfde51-cb2d-416c-82c5-7639d0f25464"
   ]
 }
