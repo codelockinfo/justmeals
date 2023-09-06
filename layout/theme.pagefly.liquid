@@ -56,7 +56,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   {%- render 'head-variables', direction: direction -%}
 
   {{ 'theme.css' | asset_url | stylesheet_tag }}
-  {% if product.handle == "dummy-product-1" or product.handle == "fresh-bundle" %}
+  {% if product.handle == "dummy-product-1" or product.handle == "fresh-bundle" or product.handle == "fresh-meal-bundle" %}
     {{ 'custombundleproduct.css' | asset_url | stylesheet_tag }}
   {% endif %}
 	{{ content_for_header }}
@@ -100,7 +100,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   <noscript>
     <link rel="stylesheet" href="{{ 'theme-noscript.css' | asset_url }}">
   </noscript>
-  {% if product.handle == "dummy-product-1" or product.handle == "fresh-bundle" %}
+  {% if product.handle == "dummy-product-1" or product.handle == "fresh-bundle" or product.handle == "fresh-meal-bundle" %}
   <script src="{{ 'jquery.min.js' | asset_url }}" defer></script>
   <script src="{{ 'product-bundle.js' | asset_url }}" defer></script>
   {% endif%}

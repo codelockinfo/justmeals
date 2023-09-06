@@ -52,7 +52,7 @@
   {%- render 'head-variables', direction: direction -%}
 
   {{ 'theme.css' | asset_url | stylesheet_tag }}
-  {% if product.handle == "dummy-product-1" or product.handle == "fresh-bundle" %}
+  {% if product.handle == "dummy-product-1" or product.handle == "fresh-bundle" or product.handle == "fresh-meal-bundle" %}
     {{ 'custombundleproduct.css' | asset_url | stylesheet_tag }}
   {% endif %}
 	{{ content_for_header }}
@@ -96,7 +96,7 @@
   <noscript>
     <link rel="stylesheet" href="{{ 'theme-noscript.css' | asset_url }}">
   </noscript>
-  {% if product.handle == "dummy-product-1" or product.handle == "fresh-bundle" %}
+  {% if product.handle == "dummy-product-1" or product.handle == "fresh-bundle" or product.handle == "fresh-meal-bundle" %}
   <script src="{{ 'jquery.min.js' | asset_url }}" defer></script>
   <script src="{{ 'product-bundle.js' | asset_url }}" defer></script>
   {% endif%}
@@ -123,7 +123,7 @@
   <a href="#main" class="visually-hidden skip-to-content" tabindex="0" data-js-inert>{{ 'general.accessibility_labels.skip_to_content' | t }}</a>
 
   {{ 'section-header.css' | asset_url | stylesheet_tag }}
-  {% unless product.handle == "dummy-product-1" or product.handle == "fresh-bundle" %}
+  {% unless product.handle == "dummy-product-1" or product.handle == "fresh-bundle" or product.handle == "fresh-meal-bundle" %}
   {%- sections 'header-group' -%}
   {% else %}
   {%- sections 'header-group-custombundle' -%}
@@ -141,12 +141,12 @@
       {% if settings.product_card_align_buy %} main-content--align-product-items {% endif %}
     ">
   {% endif %}
-  {% unless product.handle == "dummy-product-1"  or product.handle == "fresh-bundle"%}
+  {% unless product.handle == "dummy-product-1"  or product.handle == "fresh-bundle" or product.handle == "fresh-meal-bundle"%}
     {%- render 'breadcrumb' -%}
   {% endunless %}
     {{ content_for_layout }}
   </main>
-  {% unless product.handle == "dummy-product-1" or product.handle == "fresh-bundle" %}
+  {% unless product.handle == "dummy-product-1" or product.handle == "fresh-bundle" or product.handle == "fresh-meal-bundle" %}
   {%- sections 'footer-group' -%}
   {% endunless %}
   {%- section 'popups' -%}
@@ -241,7 +241,7 @@
 
         <div class="cart-form sidebar-large-padding">
           {%- render 'cart-form', type: 'sidebar' -%}
-          <a href="https://justmeats.com/products/fresh-bundle" class="cart-continue button button--fullwidth button--solid button--regular">
+          <a href="https://justmeats.com/products/fresh-meal-bundle" class="cart-continue button button--fullwidth button--solid button--regular">
             {{ 'cart.continue_browsing' | t }}
           </a>
         </div>
