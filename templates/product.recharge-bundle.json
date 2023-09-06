@@ -1,5 +1,26 @@
 {
   "sections": {
+    "2a69e9b1-5a5f-4419-923f-fa339c0d6a9a": {
+      "type": "custom-subscriptionwidget",
+      "settings": {
+        "heading": "Get your meats now",
+        "subheading": "We guarantee you'll love it or your money back !",
+        "section_heading_layout": "section-heading--center",
+        "widgetheading": "Select frequency",
+        "widgetlabel1": "Subscribe & Save",
+        "widgetlabel2": "One Time",
+        "widgetext1": "Save 25% on your first order",
+        "widgetext2": "$15 Off First Order",
+        "widgetext3": "$4 Off Future Orders",
+        "widgetext4": "5 Day Email Reminder - Cancel Anytime",
+        "widgetext5": "Free New Flavor with Every Box",
+        "deliverylabel": "Delivery",
+        "deliveryin15days": "Delivery every 15 Days",
+        "deliveryin30days": "Delivery every 30 Days",
+        "seo_h_tag": "h2",
+        "remove_margin": false
+      }
+    },
     "recharge-bundles-widget": {
       "type": "apps",
       "blocks": {
@@ -85,6 +106,7 @@
     }
   },
   "order": [
+    "2a69e9b1-5a5f-4419-923f-fa339c0d6a9a",
     "recharge-bundles-widget",
     "d7bfde51-cb2d-416c-82c5-7639d0f25464"
   ]
