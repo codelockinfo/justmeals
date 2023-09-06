@@ -61,7 +61,7 @@
         "show_locale_selector": false,
         "show_country_selector": false,
         "show_social_icons": false,
-        "bar_bgcolor": "#1c7084",
+        "bar_bgcolor": "#33f51c",
         "bar_txtcolor": "#ffffff"
       }
     }
