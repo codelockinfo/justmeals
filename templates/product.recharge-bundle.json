@@ -67,14 +67,23 @@
         },
         "template--20958047142188__d7bfde51-cb2d-416c-82c5-7639d0f25464-quick_buy-1": {
           "type": "quick_buy",
+          "disabled": true,
           "settings": {
+          }
+        },
+        "8079d685-11fc-4540-b8cc-74f190784a18": {
+          "type": "add_button",
+          "settings": {
+            "button_title": "Add",
+            "show_quantity_selector": true
           }
         }
       },
       "block_order": [
         "template--20958047142188__d7bfde51-cb2d-416c-82c5-7639d0f25464-price-1",
         "template--20958047142188__d7bfde51-cb2d-416c-82c5-7639d0f25464-title-1",
-        "template--20958047142188__d7bfde51-cb2d-416c-82c5-7639d0f25464-quick_buy-1"
+        "template--20958047142188__d7bfde51-cb2d-416c-82c5-7639d0f25464-quick_buy-1",
+        "8079d685-11fc-4540-b8cc-74f190784a18"
       ],
       "custom_css": [
         ".productsimage .product-item {cursor: pointer;}",
