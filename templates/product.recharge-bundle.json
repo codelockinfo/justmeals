@@ -55,6 +55,10 @@
         "template--20958047142188__d7bfde51-cb2d-416c-82c5-7639d0f25464-title-1",
         "template--20958047142188__d7bfde51-cb2d-416c-82c5-7639d0f25464-quick_buy-1"
       ],
+      "custom_css": [
+        ".productsimage .product-item {cursor: pointer;}",
+        ".giftProduct .product-item__quick-buy {display: none;}"
+      ],
       "settings": {
         "heading": "2",
         "subheading": "SELECT PRODUCT",
@@ -70,7 +74,7 @@
         "collection2": "pork",
         "collection3": "chicken",
         "collection4": "",
-        "product_list": "",
+        "product_list": "gift-product",
         "section_background_color": "rgba(0,0,0,0)",
         "section_heading_color": "rgba(0,0,0,0)",
         "remove_margin": false,
