@@ -518,7 +518,7 @@
     font-size: 15px;
     font-weight: 700;
 }
-#fresh-bundle .main-custombundle .add-button:hover{
+.no-touchevents .template-product  .main-custombundle .add-button:hover{
     background-color: #131515;
     color: #fff;
     border-color: #131515;

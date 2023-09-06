@@ -223,10 +223,10 @@ $(document).ready(function() {
 				console.log("PRICE");
 				var plan15 = $('.giftProduct').attr('gift-data-selling15');  
 				var plan30 = $('.giftProduct').attr('gift-data-selling30');
-				var giftSellingPlanId = (selling_plan_id == '689131815193') ? plan15 : plan30;
+				var giftSellingPlanId = (selling_plan_id == '689003200812') ? plan15 : plan30;
 	  
 				var item_data = {
-					collectionId: '459204722969',
+					collectionId: '459747393836',
 				  	externalProductId: $giftProductid,  // GIFT PRODUCT ID
 				  	externalVariantId: $giftVariantid,  // THE SELECTED VARIANT
 				  	quantity: 1  // Dynamic Quantity
@@ -331,7 +331,7 @@ $(document).ready(function() {
 
 			// console.log(variant_id);
 			var collection_id = $(this).data("collection");
-			var sellingplan_id = (selling_plan_id == '689131815193') ? $(this).data("selling15") : $(this).data("selling30");
+			var sellingplan_id = (selling_plan_id == '689003200812') ? $(this).data("selling15") : $(this).data("selling30");
 
 			var item_data = {
 				collectionId: collection_id,  // Example Shopify Collection
@@ -354,10 +354,10 @@ $(document).ready(function() {
 				console.log("PRICE");
 				var plan15 = $('.giftProduct').attr('gift-data-selling15');  
 				var plan30 = $('.giftProduct').attr('gift-data-selling30');
-				var giftSellingPlanId = (selling_plan_id == '689131815193') ? plan15 : plan30;
+				var giftSellingPlanId = (selling_plan_id == '689003200812') ? plan15 : plan30;
 	  
 				var item_data = {
-					collectionId: '459204722969',
+					collectionId: '459747393836',
 				  	externalProductId: $giftProductid,  // GIFT PRODUCT ID
 				  	externalVariantId: $giftVariantid,  // THE SELECTED VARIANT
 				  	quantity: 1,  // Dynamic Quantity
