@@ -28,6 +28,7 @@
         "info"
       ],
       "settings": {
+        "logo_src": "shopify:\/\/shop_images\/FB_LOGO_WHITE_b6494752-1e0c-4769-8ee3-ec0650aae48b.png",
         "logo_height": 90,
         "main_linklist": "new-main-menu",
         "buttontext": "Order Now",
