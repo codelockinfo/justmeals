@@ -2417,8 +2417,12 @@ html[dir=ltr] .container--has-background:after, html[dir=ltr] .card__image svg, 
   width: 18px;
 }
 .header-container .button.headerorderbtn{
-  background-color: #862E1B;
-  border-color: #862E1B;
+  background-color: #33f51c;
+  padding-right: 25px;
+  padding-left: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  border: unset;
 }
 #menu-item-account .icon-account{
   width: 15px;
@@ -2453,5 +2457,15 @@ html[dir=ltr] .container--has-background:after, html[dir=ltr] .card__image svg, 
   .customheaderpadding  .header-actions:not(:empty) {
     grid-template-columns: 1fr auto auto auto;
   }
+}
+
+
+/* CSS by ADMIN */
+.link-list li a{
+  text-transform: uppercase;
+}
+.announcement-bar .announcement-bar__content .announcement{
+  font-size: 30px;
+  height: 60px;
 }
 /* custom header css  */
