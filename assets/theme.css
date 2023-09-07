@@ -2468,4 +2468,7 @@ html[dir=ltr] .container--has-background:after, html[dir=ltr] .card__image svg, 
   font-size: 30px;
   height: 60px;
 }
+.header-actions .button--icon{
+  display: none;
+}
 /* custom header css  */
