@@ -100,8 +100,8 @@
       "settings": {
         "heading": "2",
         "subheading": "SELECT PRODUCT",
-        "subtext1": "Quickly fill your box with our preselected bundles",
-        "subtext2": "Or, personalize with your favorites",
+        "subtext1": "",
+        "subtext2": "",
         "show_view_all": false,
         "section_heading_layout": "section-heading--left",
         "style": "grid",
