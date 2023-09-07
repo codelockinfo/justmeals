@@ -1300,8 +1300,8 @@ h2.subtext1 {
     width: 100%;
     background-repeat: no-repeat;
     /* background-size: cover; */
-    background-position: top;
+    background-position: 300px 300px;
     background-size: 1100px;
-    background-attachment: fixed;
+    background-attachment: inherit;
  }
   /* cls015 end */
