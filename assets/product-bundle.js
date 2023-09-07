@@ -617,7 +617,7 @@ $(document).ready(function() {
 		console.log("CLICK");
 		$(this).closest(".subscriptionlabel").addClass("active");
 		$(".onetimeOption").closest(".subscriptionlabel").removeClass("active");
-		$(".deliverybox").removeClass("hide");
+		// $(".deliverybox").removeClass("hide");
 		$(".rc-selling-plans").removeClass("hide");
 
 		getcartTotalQty();
