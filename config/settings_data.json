@@ -180,6 +180,7 @@
     "product_icon_1_label": "",
     "product_icon_2_image": "custom.product_icon_2",
     "product_icon_3_image": "custom.product_icon_3",
+    "cart_action": "no-overlay",
     "cart_notes_enable": false,
     "cart_image_ratio": "1",
     "cart_image_fit": true,
