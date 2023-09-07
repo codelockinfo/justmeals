@@ -1299,7 +1299,9 @@ h2.subtext1 {
     height:100%;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
+    background-position: top;
+    background-size: 1100px;
     background-attachment: fixed;
  }
   /* cls015 end */
