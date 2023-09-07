@@ -580,7 +580,7 @@
 }
 .custom-bundle .flex-buttons{
     margin-top: 0 !important;
-    width: calc(65% + 0.625rem);
+    width: calc(80% + 0.625rem);
     margin-left: auto;
 }
 .box-summary .cartfontcontainer{
