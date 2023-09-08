@@ -120,7 +120,7 @@
     if ( 'ontouchstart' in window || window.DocumentTouch && document instanceof DocumentTouch ) { document.querySelector('body').classList.remove('no-touchevents'); document.querySelector('body').classList.add('touchevents'); } 
   </script>
 
-  <a href="#main" class="visually-hidden skip-to-content" tabindex="0" data-js-inert>{{ 'general.accessibility_labels.skip_to_content' | t }}</a>
+  <a href="#main" class=" skip-to-content" tabindex="0" data-js-inert>{{ 'general.accessibility_labels.skip_to_content' | t }}</a>
 
   {{ 'section-header.css' | asset_url | stylesheet_tag }}
   {% unless product.handle == "dummy-product-1" or product.handle == "fresh-bundle" or product.handle == "fresh-meal-bundle" %}
