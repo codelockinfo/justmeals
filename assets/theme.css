@@ -2469,7 +2469,6 @@ html[dir=ltr] .container--has-background:after, html[dir=ltr] .card__image svg, 
   height: 60px;
 }
 .header-actions .button--icon{
-  display: none;
 }
 
 @media screen and (max-width: 1024px){
