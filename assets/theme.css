@@ -2440,7 +2440,7 @@ html[dir=ltr] .container--has-background:after, html[dir=ltr] .card__image svg, 
 }
 @media screen and (max-width: 1023px){
   .site-header .customheaderpadding  .mobile-cart-button {
-    display: none;
+    /* display: none; */
   }
   .site-header .customheaderpadding  .sideburger{
     order: 2;
