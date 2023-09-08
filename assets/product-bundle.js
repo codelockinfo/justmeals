@@ -442,28 +442,6 @@ $(document).ready(function() {
 	});
 
 	function set_lineitems_onload() {
-		  $staticGiftProduct = '<div class="freeTurkey">'+
-		  '<div class="product-item card container-box" data-summery-index="4">'+
-		  '<div class="imageforcart">'+
-			  '<img src="https://cdn.shopify.com/s/files/1/0555/1751/1961/files/RoastedTurkeyBreast_b95ca030-1edb-4510-8c8d-f6b03187bffd.png?v=1693605897" alt="">'+
-		  '</div>'+
-			'<div class="flexdirrow card__text product-item__text gutter--regular spacing--xlarge remove-empty-space text-align--center">'+
-			  '<div class="cartfontcontainer"><a class="product-item__title" title="turkey">'+
-						'<div class="remove-line-height-space--small marginbottomtitle">'+
-						  '<span data-id="46476104368409" class="variant-title  text-size--large text-line-height--small text-weight--bold">Turkey</span>'+
-						'</div>'+
-					  '</a>'+
-		  '<div class="product-item__price text-size--large equalize-white-space">'+
-						'<div class="remove-line-height-space">'+
-		  '<div class="product-price"><span class="product-price--original " data-js-product-price-original="" data-price="FREE">FREE</span>'+
-			  '<del class="product-price--compare" data-js-product-price-compare=""></del><span class="product-price--unit text-size--regular" data-js-product-price-unit=""></span>'+
-		  '</div></div>'+
-		  '</div>'+
-		  '</div>'+
-		  '</div><div class="product-item__badges text-size--xsmall"></div></div>'+
-		  '</div>';
-
-		$("#cartSummary").append($staticGiftProduct);
 		var selected_item = getCookie("variantids");
 		var variant_qty = getCookie("variant_qty");
 		if (selected_item) {

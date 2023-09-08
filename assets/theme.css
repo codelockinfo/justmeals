@@ -2450,7 +2450,7 @@ html[dir=ltr] .container--has-background:after, html[dir=ltr] .card__image svg, 
     justify-content: left;
   }
   .site-header .header-container {
-    background: #ffffff !important;
+    background: #000000 !important;
   }
 }
 @media screen and (min-width: 1024px){
@@ -2470,5 +2470,12 @@ html[dir=ltr] .container--has-background:after, html[dir=ltr] .card__image svg, 
 }
 .header-actions .button--icon{
   display: none;
+}
+
+@media screen and (max-width: 1024px){
+  .announcement-bar .announcement-bar__content .announcement{
+    font-size: 15px;
+    height: 26px;
+  }
 }
 /* custom header css  */
