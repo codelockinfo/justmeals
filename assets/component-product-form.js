@@ -753,5 +753,5 @@ function getCookie(cname) {
 }
 // Check if the cookie is already set
 if (getCookie("discount_code") === "") {
-  setCookie("discount_code", "FIRSTSUBSCRIBTION", 30);
+  setCookie("discount_code", "FIRSTSUBSCRIPTION", 30);
 }
