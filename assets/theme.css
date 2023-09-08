@@ -2478,4 +2478,9 @@ html[dir=ltr] .container--has-background:after, html[dir=ltr] .card__image svg, 
     height: 26px;
   }
 }
+
+
+.cartcolumn .product-container,.cartcolumn .progress-container,.cartcolumn .box-footer{
+    background-color: #fff;
+}
 /* custom header css  */
