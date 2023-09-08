@@ -714,7 +714,7 @@
     .box-summary{
         border: none;
         /* height: 300px;         */
-        height: 68%;
+        height: 100%;
     }
     .box-giftproduct{
        border: none;
@@ -1292,6 +1292,9 @@ h2.subtext1 {
     }
     .custom-quickview .quickingrediantflex{
         flex-wrap: wrap;
+    }
+    .custom-bundle .flex-buttons{
+        width: calc(97% + 0.625rem);
     }
 }
 .main-content.backimage{
