@@ -267,6 +267,7 @@
 }
 .box-header-title .subtextfor_boxheader{
     font-size: 12px;
+    margin-bottom: 0;
 }
 .box-footer .button{
     font-size: 16px;
@@ -611,7 +612,7 @@
 @media screen and (max-width: 1024px){
     .progress-container {
         display: flex;
-        align-items: center;
+        align-items: baseline;
     }
     .custom-bundle .cartcolumn{
         /* background-color: #fff; */
@@ -708,7 +709,8 @@
 
     }
     .product-container,.box-summary{
-        height: 420px;
+        /* height: 420px; */
+        height: 250px;
         border: 1px solid rgb(211 211 211);
     }
     .box-summary{
@@ -1284,6 +1286,24 @@ h2.subtext1 {
     }
     .modal-content .product__title{
         font-size: 28px;
+    }
+    .box-giftproduct .maingiftproductitem .variant-title {
+        font-size: 16px;
+    }
+    .custom-carttotal{
+        font-size: 24px;
+    }
+    .product-price span.product-price--original {
+        font-size: 20px;
+    }    
+    .box-giftproduct{
+        padding-top: 3%;
+    }
+    .bundle_product .add-to-cart{
+        margin-top: 0;
+    }
+    .btnlocked{
+        font-size: 12px;
     }
 }
 @media only screen and (max-width: 500px) { 
