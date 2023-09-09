@@ -577,7 +577,7 @@ $(document).ready(function() {
         }
 		$(".custom-carttotal-int").text("$" +$getproductPrices);
           $(".addToCart").find("span").text($finalremainamount + " Checkout ($" + $getproductPrices + ")");
-        //   $(".stickyAddtocart").find("span").text($finalremainamount + " Checkout ($" + $getproductPrices + ")");
+          $(".stickyAddtocart").find("span").text($finalremainamount + " Checkout ($" + $getproductPrices + ")");
 
 		// $(".addToCart").find("span").text($remain_amount + " Checkout ($" + $productPrices + ")");
 		// $(".stickyAddtocart").find("span").text($remain_amount + " Checkout ($" + $productPrices + ")");
